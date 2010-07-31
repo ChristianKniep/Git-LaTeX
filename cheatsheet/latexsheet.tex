@@ -496,109 +496,6 @@ at the end of the line.  Normally \verb!\\! is used to separate lines.
 \end{tabular}
 
 
-\section{Math mode}
-To use math mode, surround text with \texttt{\$} or use
-\verb!\begin{equation}!.
-
-\begin{tabular}{@{}l@{\hspace{1em}}l@{\hspace{2em}}l@{\hspace{1em}}l@{}}
-Superscript$^{x}$       &
-\verb!^{x}!             &  
-Subscript$_{x}$         &
-\verb!_{x}!             \\  
-$\frac{x}{y}$           &
-\verb!\frac{x}{y}!      &  
-$\sum_{k=1}^n$          &
-\verb!\sum_{k=1}^n!     \\  
-$\sqrt[n]{x}$           &
-\verb!\sqrt[n]{x}!      &  
-$\prod_{k=1}^n$         &
-\verb!\prod_{k=1}^n!    \\ 
-\end{tabular}
-
-\subsection{Math-mode symbols}
-
-% The ordering of these symbols is slightly odd.  This is because I had to put all the
-% long pieces of text in the same column (the right) for it all to fit properly.
-% Otherwise, it wouldn't be possible to fit four columns of symbols here.
-
-\begin{tabular}{@{}l@{\hspace{1ex}}l@{\hspace{1em}}l@{\hspace{1ex}}l@{\hspace{1em}}l@{\hspace{1ex}} l@{\hspace{1em}}l@{\hspace{1ex}}l@{}}
-$\leq$          &  \verb!\leq!  &
-$\geq$          &  \verb!\geq!  &
-$\neq$          &  \verb!\neq!  &
-$\approx$       &  \verb!\approx!  \\
-$\times$        &  \verb!\times!  &
-$\div$          &  \verb!\div!  &
-$\pm$           & \verb!\pm!  &
-$\cdot$         &  \verb!\cdot!  \\
-$^{\circ}$      & \verb!^{\circ}! &
-$\circ$         &  \verb!\circ!  &
-$\prime$        & \verb!\prime!  &
-$\cdots$        &  \verb!\cdots!  \\
-$\infty$        & \verb!\infty!  &
-$\neg$          & \verb!\neg!  &
-$\wedge$        & \verb!\wedge!  &
-$\vee$          & \verb!\vee!  \\
-$\supset$       & \verb!\supset!  &
-$\forall$       & \verb!\forall!  &
-$\in$           & \verb!\in!  &
-$\rightarrow$   &  \verb!\rightarrow! \\
-$\subset$       & \verb!\subset!  &
-$\exists$       & \verb!\exists!  &
-$\notin$        & \verb!\notin!  &
-$\Rightarrow$   &  \verb!\Rightarrow! \\
-$\cup$          & \verb!\cup!  &
-$\cap$          & \verb!\cap!  &
-$\mid$          & \verb!\mid!  &
-$\Leftrightarrow$   &  \verb!\Leftrightarrow! \\
-$\dot a$        & \verb!\dot a!  &
-$\hat a$        & \verb!\hat a!  &
-$\bar a$        & \verb!\bar a!  &
-$\tilde a$      & \verb!\tilde a!  \\
-
-$\alpha$        &  \verb!\alpha!  &
-$\beta$         &  \verb!\beta!  &
-$\gamma$        &  \verb!\gamma!  &
-$\delta$        &  \verb!\delta!  \\
-$\epsilon$      &  \verb!\epsilon!  &
-$\zeta$         &  \verb!\zeta!  &
-$\eta$          &  \verb!\eta!  &
-$\varepsilon$   &  \verb!\varepsilon!  \\
-$\theta$        &  \verb!\theta!  &
-$\iota$         &  \verb!\iota!  &
-$\kappa$        &  \verb!\kappa!  &
-$\vartheta$     &  \verb!\vartheta!  \\
-$\lambda$       &  \verb!\lambda!  &
-$\mu$           &  \verb!\mu!  &
-$\nu$           &  \verb!\nu!  &
-$\xi$           &  \verb!\xi!  \\
-$\pi$           &  \verb!\pi!  &
-$\rho$          &  \verb!\rho!  &
-$\sigma$        &  \verb!\sigma!  &
-$\tau$          &  \verb!\tau!  \\
-$\upsilon$      &  \verb!\upsilon!  &
-$\phi$          &  \verb!\phi!  &
-$\chi$          &  \verb!\chi!  &
-$\psi$          &  \verb!\psi!  \\
-$\omega$        &  \verb!\omega!  &
-$\Gamma$        &  \verb!\Gamma!  &
-$\Delta$        &  \verb!\Delta!  &
-$\Theta$        &  \verb!\Theta!  \\
-$\Lambda$       &  \verb!\Lambda!  &
-$\Xi$           &  \verb!\Xi!  &
-$\Pi$           &  \verb!\Pi!  &
-$\Sigma$        &  \verb!\Sigma!  \\
-$\Upsilon$      &  \verb!\Upsilon!  &
-$\Phi$          &  \verb!\Phi!  &
-$\Psi$          &  \verb!\Psi!  &
-$\Omega$        &  \verb!\Omega!  
-\end{tabular}
-\footnotesize
-
-%\subsection{Special symbols}
-%\begin{tabular}{@{}ll@{}}
-%$^{\circ}$  &  \verb!^{\circ}! Ex: $22^{\circ}\mathrm{C}$: \verb!$22^{\circ}\mathrm{C}$!.
-%\end{tabular}
-
 \section{Sample \LaTeX\ document}
 \begin{verbatim}
 \documentclass[11pt]{article}
@@ -610,24 +507,7 @@ $\Omega$        &  \verb!\Omega!
 
 \section{section}
 \subsection*{subsection without number}
-text \textbf{bold text} text. Some math: $2+2=5$
-\subsection{subsection}
-text \emph{emphasized text} text. \cite{WC:1953}
-discovered the structure of DNA.
-
-A table:
-\begin{table}[!th]
-\begin{tabular}{|l|c|r|}
-\hline
-first  &  row  &  data \\
-second &  row  &  data \\
-\hline
-\end{tabular}
-\caption{This is the caption}
-\label{ex:table}
-\end{table}
-
-The table is numbered \ref{ex:table}.
+Testtext
 \end{document}
 \end{verbatim}
 
