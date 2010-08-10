@@ -1,0 +1,105 @@
+%\documentclass[draft,hyperref={pdfpagelabels=false}]{beamer}
+\documentclass[handout]{beamer}
+\let\Tiny=\tiny
+\hypersetup{pdfpagemode=FullScreen}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+\usepackage{listings}
+\usepackage{verbatim}
+%\setbeamertemplate{navigation symbols}{}
+
+\usetheme{Boadilla}
+
+\usecolortheme{beaver}
+\usefonttheme{professionalfonts}
+\useinnertheme{rounded}
+\useoutertheme{smoothbars}
+%\useoutertheme{sidebar}
+
+\definecolor{lGray}{gray}{.90}
+
+\newcommand{\code}[1]{\colorbox{lGray}{\texttt{#1}}}
+\author{Christian Kniep}
+
+\begin{document}
+\title{LaTeX and Git}  
+\institute[ICAT Bandung]{Internation Center of Applied Technologies Bandung}
+\date[\today]{\today} 
+
+\begin{frame}
+	\titlepage
+\end{frame} 
+
+\begin{frame}
+	\frametitle{Table of content}
+	\tableofcontents
+\end{frame} 
+
+
+\section{LaTeX-Introduction} 
+	\subsection{History}
+		\begin{frame}{Once upon a time}
+			\begin{itemize}
+				\item<1-> Donald  E. Knuth (born 1938) is a computer scientist and Professor Emeritus of the Art of Computer Programming at Stanford University.
+                \item<2-> In 1969 he wrote the book 'The Art Of Computer Programming'. He is the Godfather of a hugh amount of cumputer related stuff.
+                \item<3-> The book was typeseted with metal letters; the good old style.
+                \item<4-> In 1976 he wants to typeset the 2nd edition, but the typesetting changed to a digital way. His favorite font was not available and the digital print was awful.
+            \end{itemize}
+		\end{frame}
+        \begin{frame}{Lamport TeX}
+			\begin{itemize}
+                \item<1-> So he decided to make it by himself and he created \TeX, with the goals
+                \begin{itemize}
+                    \item<2-> allow anybody to produce high-quality books using a reasonable amount of effort
+                    \item<3-> provide a system that would give the exact same results on all computers, now and in the future
+                \end{itemize}
+				\item<4-> based on \TeX Leslie Lamport creates a dialect which includes popular Macros, so that it is easier to use than the original TeX.
+            \end{itemize}
+		\end{frame}
+    \subsection{Control Sequences}
+        \begin{frame}[fragile]{basic}
+			\begin{itemize}
+				\item<1-> Control-sequences are commands to format: \\
+                    \verb!\command[optional parameter]{parameter}!
+                \item<2-> e.g. the documentclass definition with 11pt font as book: \\
+                    \verb!\documentclass[11pt]{book}!
+                \item<3-> another useful sequence is the start-sequence \verb!\begin{something}!
+                          and its twin \verb!\end{something}! \\
+                          All text between them will be influrenced by 'something'
+            \end{itemize}
+		\end{frame}
+    \subsection{Create a document}
+        \begin{frame}[fragile]{header}
+			\begin{itemize}
+                \item<1-> To create a document we have to create a minimal header
+                \item<2-> \textbf{Document-setting} \\
+                will define the global environment of the document
+                \begin{itemize}
+                    \item<2-> \verb!\documentclass[options]{<class>}! 
+                \end{itemize}
+                \item<3-> \textbf{Packages} \\
+                    are used to provide addition functionality within the document (syntax-highlighting, url-links, etc.)
+                \begin{itemize}
+                    \item<3-> \verb!\usagepackage{<name>}! 
+                \end{itemize}
+                \item<4-> \textbf{Title} \\
+                    To have some variables defined which could be used within the layout at least this should be set
+                \begin{itemize}
+                    \item<4-> \verb!\author{<name>}! 
+                    \item<4-> \verb!\title{<title>}! 
+                    \item<4-> \verb!\institute{<date>}! 
+                    \item<4-> \verb!\date{<date>}! 
+                \end{itemize}
+            \end{itemize}
+		\end{frame}
+        \begin{frame}[fragile]{body}
+			\begin{itemize}
+                \item<1-> \verb!\begin{document}! marks the start, \verb!\end{document}! marks the end                 \begin{itemize}
+                \item<2-> after that there is usualy a Titlepage: \verb!\maketitle!
+                \item<3-> maybe you want the table of content? \verb!\tableofcontents!
+            \end{itemize}
+		\end{frame}
+        
+
+\end{document}
