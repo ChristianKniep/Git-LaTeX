@@ -1,5 +1,5 @@
-%\documentclass[draft,hyperref={pdfpagelabels=false}]{beamer}
-\documentclass[handout]{beamer}
+\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+%\documentclass[handout]{beamer}
 \let\Tiny=\tiny
 \hypersetup{pdfpagemode=FullScreen}
 \usepackage[ngerman]{babel}
@@ -42,7 +42,7 @@
 		\begin{frame}{Once upon a time}
 			\begin{itemize}
 				\item<1-> Donald  E. Knuth (born 1938) is a computer scientist and Professor Emeritus of the Art of Computer Programming at Stanford University.
-                \item<2-> In 1969 he wrote the book 'The Art Of Computer Programming'. He is the Godfather of a hugh amount of cumputer related stuff.
+                \item<2-> In 1969 he wrote the book 'The Art Of Computer Programming'. He is the Godfather of a hugh amount of computer related stuff.
                 \item<3-> The book was typeseted with metal letters; the good old style.
                 \item<4-> In 1976 he wants to typeset the 2nd edition, but the typesetting changed to a digital way. His favorite font was not available and the digital print was awful.
             \end{itemize}
@@ -76,28 +76,34 @@
                 \item<2-> \textbf{Document-setting} \\
                 will define the global environment of the document
                 \begin{itemize}
-                    \item<2-> \verb!\documentclass[options]{<class>}! 
+                    \item<2-> \verb!documentclass[options]{<class>}! 
                 \end{itemize}
                 \item<3-> \textbf{Packages} \\
                     are used to provide addition functionality within the document (syntax-highlighting, url-links, etc.)
                 \begin{itemize}
-                    \item<3-> \verb!\usagepackage{<name>}! 
+                    \item<3-> \verb!usagepackage{<name>}! 
                 \end{itemize}
                 \item<4-> \textbf{Title} \\
                     To have some variables defined which could be used within the layout at least this should be set
                 \begin{itemize}
-                    \item<4-> \verb!\author{<name>}! 
-                    \item<4-> \verb!\title{<title>}! 
-                    \item<4-> \verb!\institute{<date>}! 
-                    \item<4-> \verb!\date{<date>}! 
+                    \item<4-> \verb!author{<name>}! 
+                    \item<4-> \verb!title{<title>}! 
+                    \item<4-> \verb!institute{<date>}! 
+                    \item<4-> \verb!date{<date>}! 
                 \end{itemize}
             \end{itemize}
 		\end{frame}
         \begin{frame}[fragile]{body}
 			\begin{itemize}
-                \item<1-> \verb!\begin{document}! marks the start, \verb!\end{document}! marks the end                 \begin{itemize}
-                \item<2-> after that there is usualy a Titlepage: \verb!\maketitle!
-                \item<3-> maybe you want the table of content? \verb!\tableofcontents!
+                \item<1-> begin \verb!\begin{document}! marks the start, \verb!\end{document}! marks the end
+                \item<2-> after that there is usualy a Titlepage: \verb!maketitle!
+                \item<3-> maybe you want the table of content? \verb!tableofcontents!
+            \end{itemize}
+		\end{frame}
+        \begin{frame}[fragile]{section}
+			\begin{itemize}
+                \item<1-> Now you can place the content of your document.
+                \item<2-> Use section, subsection, etc. like you see it on the cheatsheet
             \end{itemize}
 		\end{frame}
         
